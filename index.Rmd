@@ -1,15 +1,91 @@
 ---
-title: "My Website"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Julio Garbers"
+image: "julio.jpg"
+links:
+  - label: GitHub
+    url: "https://github.com/JulioGarbers"
+  - label: Twitter
+    url: "https://twitter.com/Julio_Garbers"
+  - label: Email
+    url: "mailto:julio.garbers@liser.lu"
+output:
+  postcards::trestles
 site: distill::distill_website
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+<!-- The postcard had a useless second scrollbar (in addition to the big one of distill). For some reason, I couldn't remove it with the CSS in custom.css. My only solution is to modify the source of the postcards::trestle template to remove this scrollbar. -->
+<!-- Same for font family -->
+```{r, include = FALSE}
+trestles_orig <- readLines(
+  system.file("pandoc_templates/trestles.html",
+              package = "postcards")
+)
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
+trestles_mod <- trestles_orig
+
+trestles_mod[
+  which(
+    grepl(
+      'class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;"',
+      trestles_mod
+    )
+  )
+] <- '<div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: none;">'
+
+trestles_mod <- gsub("'Roboto Slab'", '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif', trestles_mod)
+
+trestles_mod <- gsub('style="height:15rem"', 'style="width: 35%"', trestles_mod)
+
+cat(paste(trestles_mod, collapse = "\n"), file = system.file("pandoc_templates/trestles.html",
+              package = "postcards"))
 
 ```
+
+<br>
+
+I am a PhD student in the [Doctoral Team Unit ACROSS](https://sites.google.com/view/fredericdocquier/xingb-blog/across) at the Luxembourg Institute of Socio-Economic Research (LISER). I am currently studying the causal link between access to citizenship and the economic integration of immigrants. My next project will be about internal migration in Brazil.
+
+<br>
+
+
+```{css, echo = FALSE}
+.columnname {
+  font-size: 1.4rem; 
+  font-weight: 600;
+}
+.grad-item {
+  list-style: none; 
+  background-image: url(graduation-cap-solid.png); 
+  background-repeat: no-repeat;  
+  background-size: 1.2rem; 
+  padding-left: 2rem;
+}
+.grad-location {
+  font-size: 0.8rem;
+  color: grey;
+}
+```
+
+
+:::: {style="display: grid; grid-template-columns: 40% 50%; grid-column-gap: 30px; line-height: 1.5rem;"}
+
+::: {}
+<span class = "columnname">  Research Interests </span>
+
+* Migration
+
+* Policy Evaluation
+
+* Applied Microeconometrics
+:::
+
+::: {}
+<span class = "columnname"> Education </span>
+ 
+* LISER and University of Luxembourg | PhD student in Economics of Migration, 2021 - current
+* University of Heidelberg |  Master's degree in Economics, 2018 - 2021 
+* University of Heidelberg |  Bachelor's degree in Economics, 2015 - 2018 
+
+:::
+::::
 

@@ -6,16 +6,22 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-05-28T15:25:06+02:00"
+      "last_modified": "2022-05-28T17:12:52+02:00"
     },
     {
       "path": "index.html",
-      "title": "My Website",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "title": "Julio Garbers",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-05-28T15:25:07+02:00"
+      "contents": "\r\n\r\n          \r\n          \r\n          Julio Garbers\r\n          \r\n          \r\n          Home\r\n          About\r\n          Research\r\n          CV\r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Julio Garbers\r\n            \r\n            \r\n              \r\n                \r\n                    \r\n                      \r\n                        GitHub\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Twitter\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Email\r\n                      \r\n                    \r\n                  \r\n                                  \r\n            \r\n          \r\n        \r\n        \r\n\r\n          \r\n            \r\n            \r\n            \r\n            I am a PhD student in the Doctoral\r\n            Team Unit ACROSS at the Luxembourg Institute of\r\n            Socio-Economic Research (LISER). I am currently studying the\r\n            causal link between access to citizenship and the economic\r\n            integration of immigrants. My next project will be about\r\n            internal migration in Brazil.\r\n            \r\n            \r\n            \r\n             Research Interests \r\n            Migration\r\n            Policy Evaluation\r\n            Applied Microeconometrics\r\n            \r\n            \r\n             Education \r\n            LISER and University of Luxembourg | PhD student in\r\n            Economics of Migration, 2021 - current\r\n            University of Heidelberg | Master’s degree in Economics,\r\n            2018 - 2021\r\n            University of Heidelberg | Bachelor’s degree in\r\n            Economics, 2015 - 2018\r\n            \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Julio Garbers\r\n            \r\n            \r\n              \r\n                \r\n                                    \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Twitter\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Email\r\n                    \r\n                  \r\n                                  \r\n              \r\n            \r\n            \r\n              \r\n              \r\n              \r\n              I am a PhD student in the Doctoral\r\n              Team Unit ACROSS at the Luxembourg Institute of\r\n              Socio-Economic Research (LISER). I am currently studying\r\n              the causal link between access to citizenship and the\r\n              economic integration of immigrants. My next project will\r\n              be about internal migration in Brazil.\r\n              \r\n              \r\n              \r\n               Research Interests\r\n              \r\n              Migration\r\n              Policy Evaluation\r\n              Applied Microeconometrics\r\n              \r\n              \r\n               Education \r\n              LISER and University of Luxembourg | PhD student in\r\n              Economics of Migration, 2021 - current\r\n              University of Heidelberg | Master’s degree in\r\n              Economics, 2018 - 2021\r\n              University of Heidelberg | Bachelor’s degree in\r\n              Economics, 2015 - 2018\r\n              \r\n              \r\n            \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
+      "last_modified": "2022-05-28T17:12:53+02:00"
+    },
+    {
+      "path": "research.html",
+      "title": "",
+      "author": [],
+      "contents": "\r\nResearch\r\nWork in progress\r\n\r\n\r\nAccess to Citizenship and the Integration of Immigrants\r\nJulio Garbers, Christina Gathmann\r\nMai 2022\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-05-28T17:12:53+02:00"
     }
   ],
-  "collections": []
+  "collections": ["projects/projects.json"]
 }
